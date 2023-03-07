@@ -33,10 +33,12 @@ function renderNumbers() {
         phoneDisplay.value = num[i];
     }};
 
-function sendPager() {
+function sendPager() { 
+setTimeout(function() {
     pagerDisplay.value = phoneDisplay.value;
     phoneDisplay.value = "";
-}    
+}, 1000)
+};    
 
 function reset() {
     phoneDisplay.value="";
