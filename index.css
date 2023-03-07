@@ -1,7 +1,7 @@
 /*
 Author: Cassie Lewis
 https://clewisdev.com
-Date: 
+Date: March 2023 
 */
 
 /*
@@ -14,18 +14,32 @@ https://coolors.co
 :root {
     
     /*COLORS*/
-  
+
+    --pager-background: #283033;
+    --pager-display: #9EC4B3;
+    --pager-display-text: #000000;
+
+    --phone-background: #D9D9D9;
+    --phone-display: #9EC4B3;
+    --phone-display-text: #F8F8F8;
+    --phone-key: #F8F8F8;
+
+    --reset-send-border: #0B0B0B;
+
+    --reset-button: #BE482A;
+    --reset-button-text: #F8F8F8;
+
+    --send-button: #3D9C7C;
+    --send-button-text: #0B0B0B;  
     
     /*BORDER RADIUS*/
     --br-soft: 1rem;
     --br-round: 50%;
     
     /*FONT SIZES*/
-    --fs-xs: 1rem;
-    --fs-s: 1.25rem;
-    --fs-m: 1.5rem;
-    --fs-l: 2.25rem;
-    --fs-title: 2.5rem;
+    --fs-l: 1.5rem;
+    --fs-numbers: 3.125rem
+
 }
 
 /****** MARGIN AND PADDING RESET ******/
@@ -38,29 +52,16 @@ https://coolors.co
 
 /******* GLOBAL STYLES *******/
 
-/*
-COLOR PALETTE
-
-PAGER BACKGROUND: #283033
-PAGER DISPLAY: #9EC4B3
-PAGER DISPLAY TEXT COLOR: #000000
-
-PHONE BACKGROUND: #D9D9D9
-PHONE DISPLAY: #9EC4B3
-PHONE DISPLAY TEXT COLOR: #F8F8F8
-PHONE KEY: #F8F8F8
-
-RESET AND SEND BUTTON BORDER COLOR: #0B0B0B
-
-RESET BUTTON BACKGROUND: #BE482A
-RESET BUTTON TEXT COLOR: #F8F8F8
-
-SEND BUTTON BACKGROUND: #3D9C7C
-SEND BUTTON TEXT COLOR: #0B0B0B
-*/
-
-
-html, body {
-    margin: 0;
-    padding: 0;
+body {
+    font-family: 'Press Start 2P', cursive;
 }
+
+/*TODO LAYOUT TOOLS - flexbox
+
+
+
+    
+
+    
+
+    
