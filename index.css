@@ -67,18 +67,18 @@ button {
     font-family: 'Press Start 2P', cursive;
 }
 
-h1, h2 {
-    font-size: var(--fs-l);
-    margin-bottom: 1rem;
-
-}
-
 h1 {
     color: var(--phone-key);
 }
 
 h2 {
     color: var(--plain-text);
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 1rem;
+    }
 }
 
 /******* CONTAINER ******/
@@ -98,6 +98,7 @@ h2 {
 
 .pager-field {
     width: 100%;
+    height: 60px;
     color: var(--pager-display-text);
     background-color: var(--pager-display);
     padding: 1rem;
@@ -112,6 +113,7 @@ h2 {
 
 .phone-field {
     width: 100%;
+    height: 60px;
     background-color: var(--phone-display);
     color: var(--phone-display-text);
     padding: 1rem;
@@ -129,9 +131,21 @@ h2 {
     height: 90px;
     background-color: var(--phone-key);
     color: var(--plain-text);
-    font-size: var(--fs-l);
-    margin-bottom: .8125rem;
     border: none;
+}
+
+@media (max-width: 500px) {
+    .numpad-btns {
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+    .numpad-btns {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 /****** BUTTONS *******/
@@ -145,19 +159,27 @@ h2 {
     width: 100%;
     background-color: var(--reset-button);
     color: var(--reset-button-text);
-    font-size: var(--fs-l);
-    margin-bottom: 1rem;
 }
 
 .send-btn {
     width: 100%;
     background-color: var(--send-button);
     color: var(--send-button-text);
-    font-size: var(--fs-l);
-
 }
 
+/****** MARGINS AND FONT SIZES ******/
 
+h1, h2, .numpad-btns, .reset-btn, .send-btn {
+    font-size: var(--fs-l);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+    h1, h2, .numpad-btns, .reset-btn, .send-btn {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+}
     
 
     
