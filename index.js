@@ -18,8 +18,6 @@ let num = [];
 
 /****** FUNCTIONS ******/
 
-//TODO PULL NUMBER BUTTONS VIA EVENT DELEGATION AND DATASETS
-
 function addNumber(e) {
     const target = e.target;
     console.log(target);
@@ -35,35 +33,20 @@ function renderNumbers() {
         phoneDisplay.value = num[i];
     }};
 
-
+function sendPager() {
+    pagerDisplay.value = phoneDisplay.value;
+    phoneDisplay.value = "";
+}    
 
 function reset() {
     phoneDisplay.value="";
     pagerDisplay.value="";
 }    
 
-/*
-function renderEmojis() {
-    const emojiContainer = document.getElementById("emoji-container")
-    emojiContainer.innerHTML = ""
-    for (let i = 0; i < myEmojis.length; i++) {
-        const emoji = document.createElement('span')
-        emoji.textContent = myEmojis[i]
-        emojiContainer.append(emoji)
-    }
-}
-*/
-
-//TODO DISPLAY IN "PHONE" DISPLAY
-
-//TODO SEND TO "PAGER DISPLAY"
-
 
 /****** EVENT LISTENERS ******/
 
-
 numpad.addEventListener("click", addNumber);
 resetBtn.addEventListener("click", reset);
-
-//TODO EVENTLISTENER SEND BUTTON
+sendBtn.addEventListener("click", sendPager)
 
