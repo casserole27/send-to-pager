@@ -100,9 +100,12 @@ h2 {
     width: 100%;
     height: 60px;
     color: var(--pager-display-text);
-    background-color: var(--pager-display);
+    background: linear-gradient(to right, #b8e4d0, #9EC4B3, #6b8b7d);
     padding: 1rem;
+    border-left: 7px solid black;
+    border-top: 7px solid black;
 }
+
 
 /****** PHONE ******/
 
@@ -114,10 +117,12 @@ h2 {
 .phone-field {
     width: 100%;
     height: 60px;
-    background-color: var(--phone-display);
+    background: linear-gradient(to right, #5f7077, #283033, #1e2325);
     color: var(--phone-display-text);
     padding: 1rem;
     margin-bottom: 1rem;
+    border-left: 7px solid black;
+    border-top: 7px solid black;
 }
 
 /****** NUMPAD ******/
@@ -129,9 +134,12 @@ h2 {
 .numpad-btns {
     width: 120px;
     height: 90px;
-    background-color: var(--phone-key);
+    background: linear-gradient(-200deg, #ffffff, #eeeded, #8f8e8e);
     color: var(--plain-text);
     border: none;
+    border-right: 7px solid var(--phone-display);
+    border-bottom: 7px solid var(--phone-display);
+    box-shadow: 2px 2px var(--phone-display);
 }
 
 @media (max-width: 500px) {
@@ -153,17 +161,20 @@ h2 {
 .reset-btn, .send-btn {
     border: 3px solid var(--reset-send-border);
     padding: 1rem;
+    border-right: 5px solid var(--phone-display);
+    border-bottom: 5px solid var(--phone-display);
+    box-shadow: 2px 2px var(--phone-display);
 }
 
 .reset-btn {
     width: 100%;
-    background-color: var(--reset-button);
+    background: linear-gradient(to right, #ee5a36, #BE482A, #8f3620);
     color: var(--reset-button-text);
 }
 
 .send-btn {
     width: 100%;
-    background-color: var(--send-button);
+    background: linear-gradient(to right, #58dfb2, #3D9C7C, #317a62);
     color: var(--send-button-text);
 }
 
