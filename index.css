@@ -74,9 +74,6 @@ input[type=number] {
 }
 
 
-
-
-
 @media (max-width: 500px) {
     body {
         font-size: 1rem;
@@ -142,15 +139,12 @@ input[type=number] {
 }
 
 .numpad-btns {
-    width: 120px;
-    height: 90px;
-    background: linear-gradient(-200deg, #ffffff, #eeeded, #8f8e8e);
+    background: linear-gradient(-200deg, #ffffff, #eeeded, #8f8e8e, rgb(54, 54, 102));
     color: var(--plain-text);
+    padding: 2rem 3rem;
     border: none;
-    border-right: 7px solid var(--phone-display);
-    border-bottom: 7px solid var(--phone-display);
     border-radius: var(--br-soft);
-    box-shadow: 2px 2px var(--phone-display);
+    outline: 5px outset white;
 }
 
 @media (max-width: 500px) {
@@ -172,14 +166,18 @@ input[type=number] {
 .reset-btn, .send-btn {
     border: 3px solid var(--reset-send-border);
     padding: 1rem;
-    border-right: 5px solid var(--phone-display);
-    border-bottom: 5px solid var(--phone-display);
+    /* border: none; */
+    border: 2px outset black;
+    border-radius: var(--br-soft);
+    border-right: 7px solid var(--phone-display);
+    border-bottom: 7px solid var(--phone-display);
     box-shadow: 2px 2px var(--phone-display);
+    /* outline: 5px outset white; */
 }
 
 .reset-btn {
     width: 100%;
-    background: linear-gradient(to right, #ee5a36, #BE482A, #8f3620);
+    background: linear-gradient(to right, #ff957b, #BE482A, #7c3827);
     color: var(--reset-button-text);
 }
 
