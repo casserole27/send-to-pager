@@ -35,7 +35,7 @@ https://coolors.co
     --send-button-text: #0B0B0B;  
     
     /*BORDER RADIUS*/
-    --br-soft: 1rem;
+    --br-soft: .5rem;
     --br-round: 50%;
     
     /*FONT SIZES*/
@@ -67,13 +67,15 @@ button {
     font-family: 'Press Start 2P', cursive;
 }
 
-h1 {
-    color: var(--phone-key);
+input[type=number] {
+    font-family: 'Press Start 2P', cursive;
+    font-size: var(--fs-l);
+    text-align: center;
 }
 
-h2 {
-    color: var(--plain-text);
-}
+
+
+
 
 @media (max-width: 500px) {
     body {
@@ -89,6 +91,10 @@ h2 {
 }
 
 /******* PAGER ******/
+
+.pager-title {
+    color: var(--phone-key);
+}
 
 .pager {
     background-color: var(--pager-background);
@@ -108,6 +114,10 @@ h2 {
 
 
 /****** PHONE ******/
+
+.phone-title {
+    color: var(--plain-text);
+}
 
 .phone {
     background-color: var(--phone-background);
@@ -139,6 +149,7 @@ h2 {
     border: none;
     border-right: 7px solid var(--phone-display);
     border-bottom: 7px solid var(--phone-display);
+    border-radius: var(--br-soft);
     box-shadow: 2px 2px var(--phone-display);
 }
 
@@ -180,18 +191,34 @@ h2 {
 
 /****** MARGINS AND FONT SIZES ******/
 
-h1, h2, .numpad-btns, .reset-btn, .send-btn {
+.pager-title, .phone-title, .numpad-btns, .reset-btn, .send-btn {
     font-size: var(--fs-l);
     margin-bottom: 1rem;
 }
 
 @media (max-width: 500px) {
-    h1, h2, .numpad-btns, .reset-btn, .send-btn {
+    .pager-title, .phone-title, .numpad-btns, .reset-btn, .send-btn {
         font-size: 1rem;
         margin-bottom: .5rem;
     }
 }
-    
+
+
+/****** REMOVE NUMBER SPINNER FROM INPUT ******/
+
+/****** REMOVE NUMBER SPINNER FROM INPUT ******/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
     
 

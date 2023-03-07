@@ -24,17 +24,31 @@
 
     <main class="main-container">
     
+        <!--! REVIEW MAX VS. MAXLENGTH FOR INPUTS-->
         <section class="pager">
         
-            <h1 class="pager-title">Pager</h1>
-            <p class="pager-field" id="pager-field"></p>
-        
+            <label  class="pager-title" 
+                    for="pager-field">
+                    Pager
+                    </label>
+            <input  type="number" 
+                    class="pager-field" i
+                    id="pager-field" 
+                    min="0" maxlength="15" >
+            
         </section>
 
         <section class="phone">
 
-            <h2 class="phone-title">Phone</h2>
-            <p class="phone-field"></p>
+            <label  class="phone-title" 
+            for="phone-field">
+            Phone
+            </label>
+
+            <input  type="number" 
+            class="phone-field" i
+            id="phone-field" 
+            min="0" maxlength="15" >
 
             <div class="numpad" id="numpad">
 
@@ -62,6 +76,6 @@
         </section>
     </main>
 
-    <script src=""></script>
+    <script src="index.js"></script>
  </body>
  </html>
