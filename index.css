@@ -53,9 +53,13 @@ https://coolors.co
 /******* GLOBAL STYLES *******/
 
 body {
+    height: 100vh;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     font-size: var(--fs-l);
+
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -65,10 +69,12 @@ button {
 
 h1, h2 {
     font-size: var(--fs-l);
+    margin-bottom: 1rem;
+
 }
 
 h1 {
-    color: var(--phone-key)
+    color: var(--phone-key);
 }
 
 h2 {
@@ -78,9 +84,8 @@ h2 {
 /******* CONTAINER ******/
 
 .main-container {
-    max-width: 800px;
+    width: 500px;
     margin: 1rem;
-    border: 5px solid limegreen;
 }
 
 /******* PAGER ******/
@@ -88,13 +93,14 @@ h2 {
 .pager {
     background-color: var(--pager-background);
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .pager-field {
     width: 100%;
     color: var(--pager-display-text);
     background-color: var(--pager-display);
-    /* font-size: var(--fs-numbers); */
+    padding: 1rem;
 }
 
 /****** PHONE ******/
@@ -108,26 +114,39 @@ h2 {
     width: 100%;
     background-color: var(--phone-display);
     color: var(--phone-display-text);
-    /* font-size: var(--fs-numbers); */
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 /****** NUMPAD ******/
 
+.numpad {
+    width: 100%;
+}
+
 .numpad-btns {
-    width: 230px;
+    width: 120px;
     height: 90px;
     background-color: var(--phone-key);
     color: var(--plain-text);
     font-size: var(--fs-l);
+    margin-bottom: .8125rem;
+    border: none;
 }
 
 /****** BUTTONS *******/
+
+.reset-btn, .send-btn {
+    border: 3px solid var(--reset-send-border);
+    padding: 1rem;
+}
 
 .reset-btn {
     width: 100%;
     background-color: var(--reset-button);
     color: var(--reset-button-text);
     font-size: var(--fs-l);
+    margin-bottom: 1rem;
 }
 
 .send-btn {
