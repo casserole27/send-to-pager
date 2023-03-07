@@ -14,24 +14,17 @@ const numpad = document.getElementById("numpad");
 const resetBtn = document.getElementById("reset-btn");
 const sendBtn = document.getElementById("send-btn");
 
-let num = [];
+// let num = [];
 
 /****** FUNCTIONS ******/
 
 function addNumber(e) {
     const target = e.target;
     console.log(target);
-    num.push(target.value);
-    console.log(num)
-    renderNumbers()
-}
 
-function renderNumbers() {
-    for (let i = 0; i < num.length; i++) {
-        console.log(num[i])
-//! DISPLAY EACH NUMBER AS CLICKED
-        phoneDisplay.value = num[i];
-    }};
+    phoneDisplay.value += target.value
+    
+};
 
 function sendPager() { 
 setTimeout(function() {
