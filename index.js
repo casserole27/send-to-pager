@@ -1,4 +1,5 @@
 /*
+Scrimba M3 bootcamp project
 Author: Cassie Lewis
 https://clewisdev.com
 Date: March 2023 
