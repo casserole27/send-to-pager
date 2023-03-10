@@ -18,6 +18,9 @@ const sendBtn = document.getElementById("send-btn");
 
 /****** FUNCTIONS ******/
 
+function playSound() {
+    
+}
 
 function addNumber(e) {
     const target = e.target;
@@ -34,6 +37,7 @@ setTimeout(function() {
     phoneDisplay.value = "";
 }, 1000)
 };    
+
 
 function reset() {
     phoneDisplay.value="";

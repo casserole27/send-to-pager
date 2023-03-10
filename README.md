@@ -42,9 +42,9 @@ Ideas:
 
 ### Links
 
-- Scrim: [Scrim](https://scrimba.com/scrim/co66f4672bc42a373fbd1968f)
-- Github: [Github](https://github.com/casserole27/counter-app)
-- Live Site: [Live Site](https://www.clewisdev.com/counter-app/)
+- Scrim: [Scrim](https://scrimba.com/scrim/coe73499faa56ad6f866587dc)
+- Github: [Github](https://github.com/casserole27/send-to-pager)
+- Live Site: [Live Site](https://www.clewisdev.com/send-to-pager/)
 
 ## My process
 
