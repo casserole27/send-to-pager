@@ -69,6 +69,10 @@ input[type=text] {
     text-align: center;
 }
 
+input[type=text]:focus {
+    outline: 3px solid var(--reset-button);
+}
+
 
 @media (max-width: 500px) {
     body {
@@ -139,9 +143,12 @@ input[type=text] {
     height: 90px;
     background: linear-gradient(-200deg, #ffffff, #eeeded, #8f8e8e, rgb(54, 54, 102));
     color: var(--plain-text);
-    border: none;
+    border: 15px outset white;
     border-radius: var(--br-soft);
-    outline: 5px outset white;
+}
+
+.numpad-btns:hover, .numpad-btns:focus {
+    background: radial-gradient(white, lightgray);
 }
 
 @media (max-width: 500px) {
@@ -163,13 +170,11 @@ input[type=text] {
 .reset-btn, .send-btn {
     border: 3px solid var(--reset-send-border);
     padding: 1rem;
-    /* border: none; */
     border: 2px outset black;
     border-radius: var(--br-soft);
     border-right: 7px solid var(--phone-display);
     border-bottom: 7px solid var(--phone-display);
     box-shadow: 2px 2px var(--phone-display);
-    /* outline: 5px outset white; */
 }
 
 .reset-btn {
@@ -183,6 +188,19 @@ input[type=text] {
     width: 100%;
     background: linear-gradient(to right, #58dfb2, #3D9C7C, #317a62);
     color: var(--send-button-text);
+}
+
+.reset-btn:hover, .reset-btn:focus {
+    background: #ff977c;
+}
+
+.send-btn:hover, .send-btn:focus {
+    background: #63fcc9;
+}
+
+
+.numpad-btns:active, .reset-btn:active, .send-btn:active {
+    transform: scale(.93);
 }
 
 /****** MARGINS AND FONT SIZES ******/
@@ -200,21 +218,7 @@ input[type=text] {
 }
 
 
-/****** REMOVE NUMBER SPINNER FROM INPUT ******/
 
-/****** REMOVE NUMBER SPINNER FROM INPUT ******/
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
 
     
 

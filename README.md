@@ -62,12 +62,33 @@ Ideas:
 
 ### Built with
 
+- semantic HTML5
 - CSS custom properties
+- CSS 3d rendering techniques
 - Responsive Web Design
+- Accessibility :hover, :focus, and :active
 
 ### What I learned
 
+Think simpler! I had empty arrays, .push(), and a for loop to render the numbers into the field. All I had to do was make the field's value the value of the event delegation button clicked.
+
+```javascript
+function addNumber(e) {
+    const target = e.target;
+    phoneDisplay.value += target.value;
+    
+    if (phoneDisplay.value.length > 15) {
+        phoneDisplay.value = phoneDisplay.value.slice(0, 15);
+    };
+};
+```
+I followed the Figma UI, but I made the overall application a little smaller to fit better in smaller viewports.
+
+
 ### Continued development
+
+Stretch goal
+- play a notification sound
 
 
 ### Useful resources
