@@ -19,7 +19,8 @@ const sendBtn = document.getElementById("send-btn");
 /****** FUNCTIONS ******/
 
 function playSound() {
-    
+    const pagerSound = new Audio("./assets/pager.wav");
+    pagerSound.play();
 }
 
 function addNumber(e) {
@@ -35,6 +36,7 @@ function sendPager() {
 setTimeout(function() {
     pagerDisplay.value = phoneDisplay.value;
     phoneDisplay.value = "";
+    playSound();
 }, 1000)
 };    
 

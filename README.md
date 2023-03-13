@@ -90,6 +90,16 @@ I followed the Figma UI, but I made the overall application a little smaller to 
 Stretch goal
 - play a notification sound
 
+From code reviewer:
+
+```javascript
+
+function playSound() {
+    const pagerSound = new Audio("./assets/pager.wav");
+    pagerSound.play();
+}
+
+```
 
 ### Useful resources
 
